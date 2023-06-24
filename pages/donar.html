@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="esp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5544d180e0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/styles_aux.css">
+    <title>Donar</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="index.html"><img src="/img/logo.png" alt="Logo de EdukPeru"></a>
+
+            <input type="checkbox" id="opcion-check" onclick="cambiaricono()">
+            <label id="opcion" for="opcion-check">
+                <i class="menu-icon fa-solid fa-bars""></i>
+                        </label>
+                               <ul class=" menu">
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="/pages/nosotros.html">Nosotros</a></li>
+                    <li><a href="/pages/cursos.html">Cursos</a></li>
+                    <li><a href="/pages/donar.html">Donar</a></li>
+                    <li><a href="/pages/contacto.html">Contacto</a></li>
+                    </ul>
+                    <a class="btn" href="formularios.html">Iniciar Sesión</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Podemos mejorar el futuro</h1>
+        <div class="donar">
+            <div class="donar-mensaje">
+                <img src="/img/contacto.png" alt="imagen de contacto">
+                <p>Con tu donación, puedes marcar la diferencia en la vida de muchas personas analfabetas del Perú.
+                    Ayúdanos a construir un futuro más brillante y educado para ellos. ¡Cada pequeña contribución
+                    cuenta!
+                </p>
+            </div>
+            <form onsubmit="return validarFormulario()">
+
+                <p>Selecciona el Monto:</p>
+
+                <div class="opcion">
+                    <div class="radio-btn">
+                        <input type="radio" id="monto30" name="monto" value="30" onclick="desactivarMontoDigitado()">
+                        <label for="monto30">S/ 30</label>
+                    </div>
+
+                    <div class="radio-btn">
+                        <input type="radio" id="monto50" name="monto" value="50" onclick="desactivarMontoDigitado()">
+                        <label for="monto50">S/ 50</label>
+                    </div>
+
+                    <div class="radio-btn">
+                        <input type="radio" id="monto100" name="monto" value="100" onclick="desactivarMontoDigitado()">
+                        <label for="monto100">S/ 100</label>
+                    </div>
+                </div>
+                <p>o</p>
+
+                <input type="number" name="monto_digitado" id="monto_digitado" placeholder="Ingresar monto aquí"
+                    oninput="desactivarMontos()">
+
+                <p>Selecciona la frecuencia:</p>
+                <div class="opcion">
+                    <div class="radio-btn">
+                        <input type="radio" id="mensual" name="frecuencia" value="mensual">
+                        <label for="mensual">Mensual</label>
+                    </div>
+                    <div class="radio-btn">
+                        <input type="radio" id="unico" name="frecuencia" value="unico">
+                        <label for="unico">Una vez</label>
+                    </div>
+                </div>
+                <input type="submit" value="Donar">
+                <div id="mensaje_error"></div>
+
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+        <p><small>© 2023 Copyright. EdukPeru.io</small></p>
+    </footer>
+    <script src="/js/main.js"></script>
+    <script src="//code.tidio.co/feq2fp6yhn3rowmrg3o836v2jbphfejv.js" async></script>
+</body>
+
+</html>

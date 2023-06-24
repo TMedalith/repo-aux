@@ -1,0 +1,169 @@
+.about-hero {
+    background: linear-gradient(to bottom, #FFB979, rgb(255, 247, 192));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 650px;
+    -webkit-mask: url("/img/fondonegro.svg") center bottom / cover no-repeat;
+}
+
+.descripcion {
+    max-width: 500px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    width: 50%;
+}
+
+.mision p,
+.vision p {
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: rgb(55, 55, 55);
+}
+
+.descripcion p {
+    font-weight: 500;
+    color: rgb(35, 35, 35);
+}
+
+iframe {
+    width: 39% ;
+    height: 53% ;
+}
+
+.vision img,
+.mision img {
+    width: 100px;
+    object-fit: contain;
+}
+
+.card {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+
+}
+
+.mision,
+.vision {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 5%;
+}
+
+.mision>div,
+.vision>div {
+    text-align: center;
+}
+
+
+.grupo {
+    background:  linear-gradient(to bottom, #FFB979  20%, rgba(255, 210, 142, 0.814), white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+}
+
+.grupo-cards {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.team-member {
+    background:#ffffff47;
+    backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    transition:.5s ease all;
+}
+
+.team-member:hover{
+    transform: scale(1.05);
+}
+
+.team-member figure {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.team-member figcaption {
+    padding: 25px;
+    color: transparent;
+    background-color: transparent;
+    position: absolute;
+    z-index: 996;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.team-member figure:hover figcaption {
+    visibility: visible;
+    color: #fff;
+    background: rgba(230, 78, 62, 0.9);
+    height: 100%;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.team-member figure img {
+    width: 200px;
+    height: 200px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .descripcion p,
+    .mision p,
+    .vision p {
+        font-size: 14px;
+    }
+
+    .about-hero {
+        flex-direction: column;
+    }
+
+    iframe {
+        width: 59.9%;
+        height: 38.9%;
+    }
+
+    .card {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .mision,
+    .vision {
+        width: 90%;
+        flex-direction: row;
+        gap: 30px;
+        padding: inherit;
+
+    }
+}

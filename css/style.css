@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    min-height: calc(100vh - 65px);
+    margin-top: 65px;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex: 1;
+}
+
+main>* {
+    padding: 20px;
+}
+
+
+nav, ul{
+    display:flex;
+    justify-content: space-around;
+}
+
+nav{
+    background-color: rgba(255, 255, 255, 0.849);
+    backdrop-filter: blur(20px);
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 16px;
+    padding: 7px;
+    z-index: 999;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.menu{
+    width: 50%;
+    gap: 40px;
+}
+
+.menu a:hover{
+    color: #ff3407;
+}
+
+.menu a:after {
+    content: "";
+    position: relative;
+    width: 0%;
+    height: 1px;
+    display: block;
+    transition: all 0.3s ease;
+
+}
+
+.menu a:hover::after {
+    width: 100%;
+    height: 1px;
+    background-color: #ff3407;
+}
+
+.logo img {
+    width: 50px;
+}
+
+.login-link{
+    background: linear-gradient(to left, rgb(255, 121, 72), rgb(255, 207, 51));
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.login-link:hover{
+    background: linear-gradient(to left, rgb(255, 91, 32), rgb(255, 204, 34));
+}
+
+#opcion,
+#opcion-check {
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            height: 91vh;
+            top: 9vh;
+            width: 50%;
+            background-color: #FFB979;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: right 0.5s ease;
+        }
+    
+        .login-btn {
+            justify-self: flex-end;
+            margin-left: 60%;
+        }
+    
+        #opcion-check:checked~.menu {
+            right: 0;
+        }
+    
+        #opcion {
+            display: flex;
+            font-size: 25px;
+            padding: 3px;
+            border-radius: 10px;
+            order: 2;
+        }
+    
+    
+        #opcion:hover {
+            background-color: rgba(255, 255, 255, 0.578);
+        }
+    }

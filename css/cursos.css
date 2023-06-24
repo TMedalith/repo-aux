@@ -1,0 +1,45 @@
+.servicio img {
+    width: 100px;
+    object-fit: contain;
+}
+
+.card {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+
+}
+
+.servicios{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 5%;
+}
+
+.servicio>div {
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+
+    .servicios p {
+        font-size: 14px;
+    }
+
+    .card {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .servicios {
+        width: 90%;
+        flex-direction: row;
+        gap: 30px;
+        padding: inherit;
+
+    }
+}
