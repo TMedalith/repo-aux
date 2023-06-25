@@ -1,0 +1,107 @@
+.contacto {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.container h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.contacto-info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-basis: 40%;
+    align-content: center;
+    justify-content: center;
+    background-color: #ffae77b0;
+    padding: 30px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto-info li {
+    margin: 20px 0px;
+}
+
+.contacto-info i {
+    margin-right: 40px;
+}
+
+/* Formulario */
+
+.contacto-form {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    padding: 30px 40px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input,
+textarea {
+    margin-bottom: 10px
+}
+
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    border: 1px solid #000000;
+}
+
+input[type="submit"] {
+    background-color: rgba(255, 60, 0, 0.877);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(255, 60, 0);
+}
+
+/* Estilos de sección de redes sociales */
+
+.redes-sociales {
+    display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .contacto-form,
+    .contacto-info {
+        width: 70%;
+        align-self: center;
+    }
+
+
+    .contacto {
+        flex-direction: column;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+
+    }
+}

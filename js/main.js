@@ -9,20 +9,36 @@ function desactivarMontos() {
     }
 }
 
-function validarFormulario(){
+function validarFormulario() {
     var montoElegido = document.querySelector("input[name='monto']:checked");
     var montoDigitado = document.getElementById('monto_digitado').value;
     var frecuenciaElegida = document.querySelector("input[name='frecuencia']:checked");
     var mensajeError = document.getElementById('mensaje_error');
     mensajeError.innerHTML = "";
 
-    if(!montoElegido && montoDigitado === ""){
+    if (!montoElegido && montoDigitado === "") {
         mensajeError.innerHTML = "Elige o digita un monto";
         return false;
     }
 
-    if(!frecuenciaElegida){
+    if (!frecuenciaElegida) {
         mensajeError.innerHTML = "Elige una frecuencia";
+        return false;
+    }
+
+}
+
+function validarFormulariopago() {
+    var tipotarjeta = document.querySelector("input[name='payment']:checked");
+    var nombretarjeta = document.getElementById('nombre').value;
+    var numerotarjeta = document.getElementById('number').value;
+    var fechavencimiento = document.getElementById('date').value;
+    var cvc = document.getElementById('cvc').value;
+    var mensajeError = document.getElementById('mensaje_error');
+    mensajeError.innerHTML = "";
+
+    if (tipotarjeta ==="" || nombretarjeta ==="" || numerotarjeta ==="" ||  fechavencimiento==="" || cvc === "") {
+        mensajeError.innerHTML = "Por favor, completa todos los campos requeridos";
         return false;
     }
 
@@ -49,7 +65,7 @@ function cambiaricono() {
     const menuItems = document.querySelectorAll(".menu li");
     var icon = document.querySelector('.menu-icon');
 
-    
+
 
     if (opcionCheck.checked) {
         icon.classList.remove('fa-bars');

@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="esp">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/css/style.css">
-        <link rel="stylesheet" href="/css/index.css">
-        <script src="https://kit.fontawesome.com/5544d180e0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <script src="https://kit.fontawesome.com/5544d180e0.js" crossorigin="anonymous"></script>
     <title>Edukaperu</title>
 </head>
+
 <body>
     <header>
         <nav>
@@ -16,40 +18,67 @@
 
             <input type="checkbox" id="opcion-check" onclick="cambiaricono()">
             <label id="opcion" for="opcion-check"><i class="menu-icon fa-solid fa-bars""></i></label>
-            <ul class="menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="/pages/nosotros.html">Nosotros</a></li>
-                <li><a href="/pages/cursos.html">Cursos</a></li>
-                <li><a href="/pages/donar.html">Donar</a></li>
-                <li><a href="/pages/contacto.html">Contacto</a></li>
-            </ul>
-            <a class="login-link" href="/pages/formularios.html">Iniciar Sesión</a>
+            <ul class=" menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="/nosotros.html">Nosotros</a></li>
+                    <li><a href="/cursos.html">Cursos</a></li>
+                    <li><a href="/donar.html">Donar</a></li>
+                    <li><a href="/contacto.html">Contacto</a></li>
+                    </ul>
+                    <a class="btn" href="/formularios.html">Iniciar Sesión</a>
         </nav>
     </header>
-   
 
-   <main>
-
-    <div class="hero">
-        <div class="descripcion">
-            <h1 class="titulo">Transforma tu vida, Aprende a leer</h1>
-            <p class="texto">¡Únete a nosotros y aprende a leer! Descubre cómo las palabras pueden abrir puertas y
-                brindarte un futuro lleno de
-                oportunidades.</p>
-            <a href="#" class="btn">Empezar</a>
+    <main>
+        <div class="hero">
+            <div class="descripcion">
+                <h1 class="titulo">Transforma tu vida, Aprende a leer</h1>
+                <p class="texto">¡Únete a nosotros y aprende a leer! Descubre cómo las palabras pueden abrir puertas y
+                    brindarte un futuro lleno de
+                    oportunidades.</p>
+                    <iframe src="https://www.youtube.com/embed/JoozYfCgwdI?" frameborder="0" allowfullscreen></iframe>
+                    <a href="#app" class="btn">Empezar</a>
+            </div>
+            <img src="/img/Inicio.png" alt="Imagen collage de personas analfabetas">
         </div>
-        <img src="/img/Inicio.png" alt="Imagen collage de personas analfabetas">
-    </div>
+
+        <div id="app">
+            <img class="app-img" src="/img/App.png" alt="">
+            <div class="mensaje">
+                <h2>Desbloquea el poder de la lectura y escritura de manera sencilla</h2>
+                <p>Descubre nuestra innovadora aplicación diseñada para enseñarte de manera fácil y divertida el arte de leer y escribir.
+                Con nuestra app, aprenderás a tu propio ritmo, paso a paso, mientras exploras el facinante y asombroso mundo de las palabras.
+                </p>
+                <div class="links">
+                    <a class="download" href="https://apps.apple.com/pe/developer/apple/id284417353" target="_blank">
+                        <div>
+                            <img src="/img/app-store.png" alt="">
+                        </div>
+                        <div>
+                            <p>Descargar en la App Store</p>
+                        </div>
+                    </a>
+
+                    <a class="download" href="https://play.google.com/store/apps" target="_blank">
+                        <img src="/img/play-store.png" alt="">
+                        <p>Descargar en la Play Store</p>
+                    </a>
+                </div>
+            </div>
+
+        </div>
 
 
-   </main>
+
+    </main>
 
     <footer>
         <p><small>© 2023 Copyright. Edukaperu.io</small></p>
     </footer>
-    
+
     <script src="/js/main.js"></script>
     <script src="//code.tidio.co/feq2fp6yhn3rowmrg3o836v2jbphfejv.js" async></script>
-    </body>
 </body>
+</body>
+
 </html>
