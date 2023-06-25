@@ -5,7 +5,7 @@
     justify-content: space-around;
     align-items: center;
     height: 650px;
-    -webkit-mask: url("/img/fondonegro.svg") center bottom / cover no-repeat;
+    mask: url("/img/fondonegro.svg") center bottom / cover no-repeat;
 }
 
 .descripcion {
